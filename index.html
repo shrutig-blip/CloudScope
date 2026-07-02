@@ -87,7 +87,29 @@ What's happening in your system?
 
 <div class="problem-card" data-problem="traffic">
 
+<div id="scanner" class="scanner hidden">
 
+<div class="scan-header">
+
+<div class="scan-dot"></div>
+
+<span>Cloud Infrastructure Scanner</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div id="scanFill"></div>
+
+</div>
+
+<h3 id="scanStatus">
+
+Initializing...
+
+</h3>
+
+</div>
 
 <h3>Traffic Spike</h3>
 
@@ -160,7 +182,101 @@ Diagnose System
 
 <section class="result-section">
 
-<div id="resultCard" class="result-card hidden">
+<div class="badge">
+Cloud Health Report
+</div>
+
+<div class="health-box">
+
+<div class="gauge">
+
+<svg width="180" height="180">
+
+<circle
+
+cx="90"
+
+cy="90"
+
+r="75"
+
+class="track"
+
+/>
+
+<circle
+
+cx="90"
+
+cy="90"
+
+r="75"
+
+class="progress"
+
+id="progressCircle"
+
+/>
+
+</svg>
+
+<div class="gauge-text">
+
+<h2 id="healthScore">86%</h2>
+
+<p id="healthStatus">Healthy</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3>
+Detected Issue
+</h3>
+
+<p id="detectedIssue"></p>
+
+<h2 id="serviceName"></h2>
+
+<div class="confidence">
+
+<div class="confidence-fill"></div>
+
+</div>
+
+<p id="reason"></p>
+
+<div class="architecture">
+
+<h3>
+Recommended Architecture
+</h3>
+
+<div id="architectureFlow"></div>
+
+</div>
+
+<div class="alternative">
+
+<h3>
+Alternative Service
+</h3>
+
+<p id="alternative"></p>
+
+</div>
+
+<div class="alternative">
+
+<h3>
+Best Practices
+</h3>
+
+<ul id="bestPractices"></ul>
+
+</div>
 
 <div class="badge">
 
