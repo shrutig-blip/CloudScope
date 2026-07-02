@@ -1,5 +1,8 @@
 # ☁️ CloudScope
 
+Live demo:
+https://cloud-scope-navy.vercel.app/#
+
 CloudScope is an interactive frontend application that helps users diagnose common cloud infrastructure problems and recommends the most suitable AWS service based on real-world scenarios.
 
 ## Features
