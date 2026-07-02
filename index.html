@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CloudScope | Visual Cloud Diagnosis</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="data/services.js"></script>
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<nav>
+
+<div class="logo">
+
+CloudScope
+
+</div>
+
+<div class="nav-links">
+
+<a href="#">Home</a>
+
+<a href="#">Diagnose</a>
+
+<a href="#">Services</a>
+
+<a href="#">About</a>
+
+</div>
+
+</nav>
+
+<header>
+
+<h1>
+
+Diagnose Cloud Problems
+
+<span>Like an Architect.</span>
+
+</h1>
+
+<p>
+
+Select your issue and instantly discover the most suitable AWS service along with architecture recommendations.
+
+</p>
+
+<a href="#diagnosis">
+
+<button>
+
+Start Diagnosis →
+
+</button>
+
+</a>
+
+</header>
+
+<section id="diagnosis">
+
+<h2>
+
+What's happening in your system?
+
+</h2>
+
+<div class="problem-grid">
+
+<div class="problem-card" data-problem="traffic">
+
+
+
+<h3>Traffic Spike</h3>
+
+<p>Website crashes during peak traffic.</p>
+
+</div>
+
+<div class="problem-card" data-problem="website">
+
+
+
+<h3>Slow Website</h3>
+
+<p>Pages load slowly worldwide.</p>
+
+</div>
+
+<div class="problem-card" data-problem="orders">
+
+
+
+<h3>Orders Lost</h3>
+
+<p>Checkout requests disappear.</p>
+
+</div>
+
+<div class="problem-card" data-problem="notifications">
+
+
+
+<h3>Need Notifications</h3>
+
+<p>Email/SMS alerts required.</p>
+
+</div>
+
+<div class="problem-card" data-problem="logs">
+
+
+<h3>No Monitoring</h3>
+
+<p>Unable to monitor services.</p>
+
+</div>
+
+<div class="problem-card" data-problem="storage">
+
+
+
+<h3>Storage Problem</h3>
+
+<p>Need scalable file storage.</p>
+
+</div>
+
+</div>
+
+<div class="center">
+
+<button id="diagnoseBtn">
+
+Diagnose System
+
+</button>
+
+</div>
+
+</section>
+
+<section class="result-section">
+
+<div id="resultCard" class="result-card hidden">
+
+<div class="badge">
+
+Recommended Service
+
+</div>
+
+<h2 id="serviceName">
+
+Amazon SQS
+
+</h2>
+
+<div class="confidence">
+
+<div class="confidence-fill"></div>
+
+</div>
+
+<p id="reason">
+
+Reason appears here...
+
+</p>
+
+<div class="architecture">
+
+<h3>
+
+Recommended Architecture
+
+</h3>
+
+<div id="architectureFlow">
+
+Client
+
+↓
+
+API Gateway
+
+↓
+
+Lambda
+
+↓
+
+SQS
+
+↓
+
+Workers
+
+</div>
+
+</div>
+
+<div class="alternative">
+
+<h3>
+
+Alternative
+
+</h3>
+
+<p id="alternative">
+
+Amazon EventBridge
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>
+
+Why CloudScope?
+
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+
+
+
+<h3>Instant Diagnosis</h3>
+
+<p>
+
+Identify cloud issues within seconds.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+
+
+<h3>Smart Recommendations</h3>
+
+<p>
+
+Maps real-world problems to AWS services.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+
+<h3>Architecture Visualization</h3>
+
+<p>
+
+Understand how services connect.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+
+
+<h3>Learn While Exploring</h3>
+
+<p>
+
+Each recommendation includes practical explanations.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>
+
+CloudScope
+
+</h2>
+
+<p>
+
+Visual Cloud Diagnosis & AWS Architecture Recommendation Engine
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
